@@ -1,0 +1,142 @@
+
+
+
+footer{
+    position:relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+   
+}
+
+footer .container{
+width: 100%;
+display: grid;
+grid-template-columns: 2fr 1fr 1fr 1fr;
+grid-gap: 20px;
+}
+
+footer .container .apropos h2{
+    position: relative;
+    color: #ADADAC;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+footer .container .apropos p{
+    color: #ADADAC;
+}
+
+footer .container .sci{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6px);
+}
+
+footer .container .sci li{
+    list-style: none;
+}
+
+
+
+
+footer .container .support{
+    position: relative;
+}
+
+footer .container .support ul li{
+    list-style: none;
+}
+
+footer .container .support ul li a{
+    color: #ADADAC;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .container .support h2{
+    position: relative;
+    color: #ADADAC;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+footer .container .services{
+    position: relative;
+}
+
+footer .container .services ul li{
+    list-style: none;
+}
+
+footer .container .services ul li a{
+    color: #ADADAC;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .container .services h2{
+    position: relative;
+    color: #ADADAC;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+footer .container .contact .info{
+    position: relative;
+}
+
+footer .container .contact .info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+    
+}
+
+footer .container .contact .info li span{
+    color: #555;
+    font-size: 20px;
+}
+
+footer .container .contact .info li a{
+    text-decoration: none;
+    color: #ADADAC;
+}
+
+footer .container .contact h2{
+    position: relative;
+    color: #ADADAC;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.copyrightText{
+    width: 100%;
+    background: #fff;
+    padding: 20px 100px 30px;
+    text-align: center;
+    color: #ADADAC;
+    font-family: 'Poppins',sans-serif;
+    font-size: 13px;
+
+}
+
+@media(max-width:991px){
+    footer{
+        padding: 40px;
+    }
+
+    footer .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-gap: 20px;
+    }
+}

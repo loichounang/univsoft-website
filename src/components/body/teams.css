@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+#teams{
+    padding: 50px 0;
+}
+
+
+#teams h4{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.title-p{
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box p{
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.box{
+    background: #37a5da;
+    padding:60px 20px ;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.box img{
+    width: 150px;
+    margin: 0 auto;
+    margin-top: -140px;
+    border: 8px solid #37a5da;
+
+}
+
+.social-icons i{
+    margin:  0 3px;
+    padding: 9px;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}

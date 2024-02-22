@@ -1,0 +1,14 @@
+/* partners.css */
+
+.customer-logo-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .slide img {
+    max-width: 100px; /* Ajustez la taille maximale selon vos besoins */
+    max-height: 50px; /* Ajustez la taille maximale selon vos besoins */
+    margin: 0 auto; /* Centrez l'image */
+  }
+  

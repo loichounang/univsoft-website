@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/univsoft-website/static/css/main.196d53eb.css",
-    "main.js": "/univsoft-website/static/js/main.32bfefce.js",
+    "main.js": "/univsoft-website/static/js/main.c1fbfbc2.js",
     "static/media/bootstrap-icons.woff?": "/univsoft-website/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/s.jpg": "/univsoft-website/static/media/s.d8c2971765a747cc315f.jpg",
     "static/media/t.jpg": "/univsoft-website/static/media/t.24d9c45a421a53c261f0.jpg",
@@ -18,10 +18,10 @@
     "static/media/slick.woff": "/univsoft-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/univsoft-website/index.html",
     "main.196d53eb.css.map": "/univsoft-website/static/css/main.196d53eb.css.map",
-    "main.32bfefce.js.map": "/univsoft-website/static/js/main.32bfefce.js.map"
+    "main.c1fbfbc2.js.map": "/univsoft-website/static/js/main.c1fbfbc2.js.map"
   },
   "entrypoints": [
     "static/css/main.196d53eb.css",
-    "static/js/main.32bfefce.js"
+    "static/js/main.c1fbfbc2.js"
   ]
 }

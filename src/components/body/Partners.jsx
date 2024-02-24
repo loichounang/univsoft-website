@@ -39,7 +39,7 @@ function Partners() {
   };
 
   return (
-    <div className='container containers'>
+    <div className='container'>
       <h2 className='text-center mt-3 fw-bold'  style={{color:'#3464AE'}}>Nos Partenaires</h2>
       <hr className='text-dark fw-bold' style={{width:'200px',margin:'15px auto', height:'5px !important'}}/>
       <Slider {...settings} className='customer-logo-slider'>

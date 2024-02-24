@@ -1,82 +1,35 @@
 import React from 'react'
 import '../body/contact.css';
-import mail from '../../assets/images/mail.png';
-import call from '../../assets/images/call.png';
-import localosation from '../../assets/images/localisation.jpeg';
-import facebook from '../../assets/images/facebook.png';
-import youtube from '../../assets/images/youtube.png';
-import google from '../../assets/images/google.png';
+
 
 
 function Contact() {
   return (
-    <section className='sect'>
-    <div className="container ">
-      <div className="contactinfo">
-        <h2>Contactez Nous</h2>
-        <ul className="info">
-          <li>
-            <span><img src={localosation} alt='...' /></span>
-            <span>2912 Meadowbrook Road<br/>
-            
-            Los Angeles, CA 
-            900017
-            </span>   
-          </li>
-
-          <li>
-            <span><img src={mail} /></span>
-            <span>hounangloic21@gmail.com
-            </span>   
-          </li>
-
-          <li>
-            <span><img src={call} alt='...'  /></span>
-            <span>+237692061910
-            </span>   
-          </li>
-        </ul>
-        {/*autre section */}
-      <div>
-        <ul className="sci">
-          <li><a href='#'><img src={youtube} /></a></li>
-          <li><a href='#'><img  src={google} /></a></li>
-          <li><a href='#'><img  src={youtube} /></a></li>
-          <li><a href='#'><img  src={facebook} /></a></li>
-          <li><a href='#'><img  src={youtube} /></a></li>
-
-        </ul>
-        </div>
-      </div>
+    <div class="container containers">
+        <h3 className='fw-bold fs-4 mb-4' style={{color:'#3464AE'}}>Contactez Nous</h3>
+        <form action="#">
+            <div class="contact-info">
+            <label for="lname">Nom</label>
+                <input type="text" id="fname" name="fname" className='mb-3'placeholder="Votre nom" />
+                
+                <label for="fname">Prénom</label>
+                <input type="text" id="lname" name="lname"  placeholder="Votre prénom"/>
+            </div>
+            <div class="contact-info">
+                <label for="email">Adresse email</label>
+                <input type="email" id="email"  className='mb-3' name="email" placeholder="Votre adresse email"/>
+                <label for="mobile">Numéro de téléphone</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Votre numéro de téléphone"/>
+            </div>
+            <div class="message">
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Ecrivez votre message ici..."></textarea>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Envoyer"/>
+            </div>
+        </form>
     </div>
-    <div className='contactForm'>
-      <h2>Send a Message</h2>
-      <div className="inputBox ">
-        <input type='text' name='' required/>
-        <span>Noms</span>
-      </div>
-      <div className="inputBox ">
-        <input type='text' name='' required/>
-        <span>Prénoms</span>
-      </div>
-      <div className="inputBox ">
-        <input type='email' name='' required/>
-        <span>Email</span>
-      </div>
-      <div className="inputBox ">
-        <input type='tel' name='' required/>
-        <span>Téléphone</span>
-      </div>
-      <div className="inputBox ">
-        <textarea name='' required> </textarea>
-        <span>Ecrivez votre message ici...</span>
-      </div>
-      <div className="inputBox">
-        <input type='submit' value='Envoyer' />
-       
-      </div>
-    </div>
-    </section>
   )
 }
 

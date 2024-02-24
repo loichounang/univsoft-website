@@ -1,142 +1,127 @@
+/* Style du footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  /* Conteneur dans le footer */
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le contenu dans le conteneur */
+  }
+  
+  /* Titre dans le footer */
+  footer h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  /* Liste dans le footer */
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Éléments de la liste dans le footer */
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Liens dans la liste du footer */
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
 
+  }
 
-
-footer{
-    position:relative;
-    width: 100%;
-    height: auto;
-    padding: 50px 100px;
+  footer ul li a i{
+    margin-right: 5px;
+  }
+  
+  footer a i{
+    margin-right: 15px;
+    color: #ADADAC;
    
-}
+  }
+  
+  footer a i:hover{
+    color: #3464AE;
+  }
+  /* Effet au survol des liens dans le footer */
+  footer ul li a:hover {
+    color: #ddd;
+  }
 
-footer .container{
-width: 100%;
-display: grid;
-grid-template-columns: 2fr 1fr 1fr 1fr;
-grid-gap: 20px;
-}
+  /* Ajouter de l'espace entre les icônes de téléphone */
 
-footer .container .apropos h2{
-    position: relative;
-    color: #ADADAC;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
+  
+  /* Ligne de séparation dans le footer */
+  footer hr {
+    border-color: #ddd;
+  }
+  
+  /* Paragraphe centré dans le footer */
+  footer p.text-center {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center; /* Centrer le texte */
+   
+  }
 
-footer .container .apropos p{
-    color: #ADADAC;
-}
+  footer p{
+    color:#ADADAC;
+  }
+  
+  /* Disposition en ligne des éléments dans le footer */
+  footer .row {
+    display: flex;
+    flex-wrap: wrap; /* Gestion du retour à la ligne sur les petits écrans */
+    justify-content: space-between; /* Espacement équitable entre les éléments */
+  }
+  
+  /* Style des colonnes */
+  footer .col-md-12 {
+    flex: 0 0 100%; /* Occuper toute la largeur de la ligne par défaut */
+  }
+  
+  /* ... (votre code existant) ... */
 
-footer .container .sci{
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(6px);
-}
-
-footer .container .sci li{
-    list-style: none;
-}
-
-
-
-
-footer .container .support{
-    position: relative;
-}
-
-footer .container .support ul li{
-    list-style: none;
-}
-
-footer .container .support ul li a{
-    color: #ADADAC;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-footer .container .support h2{
-    position: relative;
-    color: #ADADAC;
-    font-weight: 600;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-
-footer .container .services{
-    position: relative;
-}
-
-footer .container .services ul li{
-    list-style: none;
-}
-
-footer .container .services ul li a{
-    color: #ADADAC;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-footer .container .services h2{
-    position: relative;
-    color: #ADADAC;
-    font-weight: 600;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-
-footer .container .contact .info{
-    position: relative;
-}
-
-footer .container .contact .info li{
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    margin-bottom: 16px;
-    
-}
-
-footer .container .contact .info li span{
-    color: #555;
-    font-size: 20px;
-}
-
-footer .container .contact .info li a{
-    text-decoration: none;
-    color: #ADADAC;
-}
-
-footer .container .contact h2{
-    position: relative;
-    color: #ADADAC;
-    font-weight: 600;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.copyrightText{
-    width: 100%;
-    background: #fff;
-    padding: 20px 100px 30px;
-    text-align: center;
-    color: #ADADAC;
-    font-family: 'Poppins',sans-serif;
-    font-size: 13px;
-
-}
-
-@media(max-width:991px){
-    footer{
-        padding: 40px;
+/* Règles de médias queries pour la responsivité */
+@media (max-width: 768px) {
+    footer .col-md-12 {
+      flex: 0 0 100%; /* Pour occuper toute la largeur à 768px */
+    }
+  
+    footer .row {
+      flex-direction: column; /* Colonnes empilées */
+    }
+  
+    footer .col-md-6 {
+      text-align: center; /* Centrer le texte horizontalement */
+      align-items: center; /* Centrer le contenu verticalement */
     }
 
-    footer .container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-gap: 20px;
+    footer .col-md-3 {
+        text-align: left; /* Centrer le texte horizontalement */
+        align-items: left; /* Centrer le contenu verticalement */
+        margin-top: 10px;
+      }
+  }
+  
+  @media (max-width: 572px) {
+    footer .col-md-12 {
+      flex: 0 0 100%; /* Pour occuper toute la largeur à 572px */
     }
-}
+  
+    footer .row {
+      flex-direction: column; /* Colonnes empilées */
+    }
+  
+    footer .col-md-4 {
+        text-align: left; /* Centrer le texte horizontalement */
+        align-items: left; /* Centrer le contenu verticalement */
+    }
+  }
+  

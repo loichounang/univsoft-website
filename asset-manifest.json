@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/univsoft-website/static/css/main.9da4d722.css",
-    "main.js": "/univsoft-website/static/js/main.58293a83.js",
+    "main.css": "/univsoft-website/static/css/main.bee1da3b.css",
+    "main.js": "/univsoft-website/static/js/main.aa9fcb86.js",
     "static/media/bootstrap-icons.woff?": "/univsoft-website/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/univsoft-website/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "static/media/li.jpg": "/univsoft-website/static/media/li.a148d5a129792e0f51b2.jpg",
+    "static/media/abouts.jpg": "/univsoft-website/static/media/abouts.a148d5a129792e0f51b2.jpg",
+    "static/media/about.jpg": "/univsoft-website/static/media/about.bfb90b279e27d7d5d986.jpg",
     "static/media/logo.jpeg": "/univsoft-website/static/media/logo.bc6acecad0871ae48fea.jpeg",
     "static/media/hero.jpg": "/univsoft-website/static/media/hero.802a173e0cbb60bdf426.jpg",
     "static/media/slick.svg": "/univsoft-website/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -12,11 +13,11 @@
     "static/media/slick.ttf": "/univsoft-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/univsoft-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/univsoft-website/index.html",
-    "main.9da4d722.css.map": "/univsoft-website/static/css/main.9da4d722.css.map",
-    "main.58293a83.js.map": "/univsoft-website/static/js/main.58293a83.js.map"
+    "main.bee1da3b.css.map": "/univsoft-website/static/css/main.bee1da3b.css.map",
+    "main.aa9fcb86.js.map": "/univsoft-website/static/js/main.aa9fcb86.js.map"
   },
   "entrypoints": [
-    "static/css/main.9da4d722.css",
-    "static/js/main.58293a83.js"
+    "static/css/main.bee1da3b.css",
+    "static/js/main.aa9fcb86.js"
   ]
 }

@@ -43,7 +43,7 @@ function HeroSection() {
             numérique pour votre entreprise. Ensemble, créons un avenir connecté et prospère.
             </div>
             <div className="cta">
-              <a href='#' className='btn btn-primary shadow-none  'style={{backgroundColor:'#3464AE', color:'#fff'}}>Contactez Nous</a>
+              <a href='/univsoft-website/contact/' className='btn btn-primary shadow-none  'style={{backgroundColor:'#3464AE', color:'#fff'}}>Contactez Nous</a>
             </div>
           </div>
         </div>

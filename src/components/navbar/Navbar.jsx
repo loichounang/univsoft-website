@@ -40,13 +40,13 @@ function Navbar() {
       <a className='me-5'></a>
       <a className='me-3'></a>
       <li class="nav-item me-3" style={{ listStyle: 'none' , marginRight: '10px' }}>
-        <a class="text-truncate d-inline" href="tel:+2376926061910" style={{ textDecoration: 'none', color: 'white', fontFamily: 'Poppins', height: '100%' }}>
-          <i class="bi bi-telephone-fill fw-bold fs-6  mt-3" style={{ color: 'white', fontFamily: 'Poppins' }}></i> +237 692 06 19 10
+        <a class="text-truncate d-inline" href="tel:+2376 96 45 83 82" style={{ textDecoration: 'none', color: 'white', fontFamily: 'Poppins', height: '100%' }}>
+          <i class="bi bi-telephone-fill fw-bold fs-6  mt-3" style={{ color: 'white', fontFamily: 'Poppins' }}></i> +237 6 96 45 83 82
         </a>
       </li>
       <li class="nav-item " style={{ listStyle: 'none' }}>
-        <a class="text-truncate d-inline" href="mailto:contact@univsoft.com" style={{ textDecoration: 'none', color: 'white', fontFamily: 'Poppins', height: '100%', marginRight:'15px' }}>
-          <i class="bi bi-envelope fw-bold fs-6  mt-3" style={{ color: 'white', fontFamily: 'Poppins' }}></i> contact@univsoft.com
+        <a class="text-truncate d-inline" href="mailto:contact@univ-soft.com" style={{ textDecoration: 'none', color: 'white', fontFamily: 'Poppins', height: '100%', marginRight:'15px' }}>
+          <i class="bi bi-envelope fw-bold fs-6  mt-3" style={{ color: 'white', fontFamily: 'Poppins' }}></i> contact@univ-soft.com
         </a>
       </li>
     </ul>
@@ -73,13 +73,13 @@ function Navbar() {
             <a class="nav-link" href="/univsoft-website/about/">A propos de nous</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nos Solutions</a>
+            <a class="nav-link" href="/univsoft-website/services/">Nos Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#" >Nos Services</a>
+            <a class="nav-link " href="/univsoft-website/solutions/" >Nos Solutions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#" >Contact</a>
+            <a class="nav-link " href="/univsoft-website/contact/" >Contact</a>
           </li>
         </ul>
         

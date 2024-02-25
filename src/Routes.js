@@ -7,6 +7,10 @@ import About from "./views/About";
 import './style.css';
 import Navbar from '../src/components/navbar/Navbar';
 import Footer from "./components/footer/Footer";
+import Service from "./views/Service";
+import Contact from "./views/Contact";
+import Solutions from "./views/Solutions";
+import BackToTop from "./components/backtotop/BackToTop";
 
 
 const ApplicationRoutes = () => {
@@ -70,8 +74,72 @@ const ApplicationRoutes = () => {
             </TransitionGroup>
           )}
         />
+
+<Route
+          path="/univsoft-website/services/"
+          element={loading ? (
+            <SpinnerContainer>
+              <Spinner animation="border" role="status">
+                <span className="sr-only">Loading...</span>
+              </Spinner>
+            </SpinnerContainer>
+          ) : (
+            <TransitionGroup>
+              <CSSTransition
+                key="about"
+                classNames="fade-enter"
+                timeout={300}
+              >
+                <Service />
+              </CSSTransition>
+            </TransitionGroup>
+          )}
+        />
+
+<Route
+          path="/univsoft-website/contact/"
+          element={loading ? (
+            <SpinnerContainer>
+              <Spinner animation="border" role="status">
+                <span className="sr-only">Loading...</span>
+              </Spinner>
+            </SpinnerContainer>
+          ) : (
+            <TransitionGroup>
+              <CSSTransition
+                key="about"
+                classNames="fade-enter"
+                timeout={300}
+              >
+                <Contact />
+              </CSSTransition>
+            </TransitionGroup>
+          )}
+        />
+
+<Route
+          path="/univsoft-website/solutions/"
+          element={loading ? (
+            <SpinnerContainer>
+              <Spinner animation="border" role="status">
+                <span className="sr-only">Loading...</span>
+              </Spinner>
+            </SpinnerContainer>
+          ) : (
+            <TransitionGroup>
+              <CSSTransition
+                key="about"
+                classNames="fade-enter"
+                timeout={300}
+              >
+                <Solutions/>
+              </CSSTransition>
+            </TransitionGroup>
+          )}
+        />
       </Routes>
     </BrowserRouter>
+    <BackToTop/>
     <Footer/>
     </div>
   );

@@ -1,5 +1,4 @@
 import React from 'react'
-import '../body/solutions.css';
 
 function Solutions() {
   return (
@@ -12,6 +11,8 @@ function Solutions() {
             <div className="col-12 col-sm-6 col-md-4 m-auto">
                 <div className="card border-0 shadow text-center my-3">
                    <div className="card-body ">
+                  
+
                     <h3 className='fw-bold fs-4' style={{color:'#3464AE'}}>Gestion Commerciale</h3>
                     <p className='fs-6' style={{color:'#ADADAC',textAlign:'justify'}}>Propulsez votre entreprise vers de nouveaux sommets avec notre solution de gestion commerciale révolutionnaire.
                     Plus qu'un simple logiciel, un véritable partenaire.
@@ -52,12 +53,53 @@ Notre plateforme intuitive et personnalisable s'adapte aux besoins spécifiques 
                  {/* card  ends*/}
             </div>
              {/* col  ends*/}
-          </div>
-          </div>
-          <div className="cta text-center ">
-              <a href='/univsoft-website/solutions/' className='btn btn-primary shadow-none  'style={{backgroundColor:'#3464AE', color:'#fff'}}>Voir toute nos solution</a>
+             <div className="col-12 col-sm-6 col-md-4 m-auto">
+                <div className="card  border-0 shadow text-center my-3">
+                   <div className="card-body ">
+                   
+
+                    <h3 className='fw-bold fs-4' style={{color:'#3464AE'}}>Messagerie WhatsApp</h3>
+                    <p  className='fs-6' style={{color:'#ADADAC',textAlign:'justify'}}> Bienvenue chez<span className='fw-bold'> Nyxis</span>, votre partenaire pour une communication instantanée et efficace via WhatsApp. Notre solution de gestion des messages WhatsApp réinvente la manière dont vous interagissez avec votre public.</p>
+
+                   </div>
+                   {/* card body ends*/}
+                </div>
+                 {/* card  ends*/}
             </div>
-            <div className='mb-5'></div>
+             {/* col  ends*/}
+             <div className="col-12 col-sm-6 col-md-4 m-auto">
+                <div className="card  border-0 shadow text-center my-3">
+                   <div className="card-body ">
+                   
+
+                    <h3 className='fw-bold fs-4' style={{color:'#3464AE'}}>Gestion des Courtiers</h3>
+                    <p  className='fs-6' style={{color:'#ADADAC',textAlign:'justify'}}> Bienvenue chez <span className='fw-bold'> Kourtis</span>, votre partenaire de confiance pour une gestion de courtiers efficace et performante. Notre solution de gestion des courtiers est spécialement conçue pour répondre aux besoins dynamiques de votre entreprise.</p>
+
+                   </div>
+                   {/* card body ends*/}
+                </div>
+                 {/* card  ends*/}
+            </div>
+             {/* col  ends*/}
+             <div className="col-12 col-sm-6 col-md-4 m-auto">
+                <div className="card  border-0 shadow text-center my-3">
+                   <div className="card-body ">
+                   
+
+                    <h3 className='fw-bold fs-4' style={{color:'#3464AE'}}>Gestions de Voyages</h3>
+                    <p  className='fs-6' style={{color:'#ADADAC',textAlign:'justify'}}>Enchanté de vous accueillir chez <span className='fw-bold'> Travyx</span>, votre partenaire privilégié pour voyager en toute sérénité !
+ bien plus qu'une simple solution de gestion des voyages, c'est votre compagnon de voyage virtuel, qui vous guide et vous assiste à chaque étape de votre aventure, de l'inspiration à la réalisation.</p>
+
+                   </div>
+                   {/* card body ends*/}
+                </div>
+                 {/* card  ends*/}
+            </div>
+             {/* col  ends*/}
+        </div>
+        {/* row ends*/}
+    </div>
+      {/* container ends*/}
 </section>
   )
 }

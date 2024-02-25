@@ -65,6 +65,7 @@ function Partners() {
           <img src={openia} alt='YouTube' />
         </div>
       </Slider>
+      <div className='mb-5'></div>
     </div>
   );
 }

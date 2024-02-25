@@ -13,8 +13,8 @@ function Footer() {
       <div class="col-md-3">
         <h3 className='fw-bold fs-5 mt-2'>CONTACTEZ-NOUS</h3>
         <ul className='mt-5'>
-          <li><a href="tel:+2376926061910 me-2"><i class="bi bi-telephone-fill fs-6 "></i>+237692061910</a></li>
-          <li><a href="mailto:contact@univsoft.com"><i class="bi bi-envelope fs-6"></i> contact@univsoft.com</a></li>
+          <li><a href="tel:+237 6 96 45 83 82 me-2"><i class="bi bi-telephone-fill fs-6 "></i>+237 6 96 45 83 82</a></li>
+          <li><a href="mailto:contact@univ-soft.com"><i class="bi bi-envelope fs-6"></i> contact@univ-soft.com</a></li>
           <a href='#'><i class="bi bi-facebook fs-3"></i></a>
          <a href='#'><i class="bi bi-twitter fs-3 "></i></a>
           <a href='#'><i class="bi bi-linkedin fs-3"></i></a>
@@ -23,10 +23,10 @@ function Footer() {
       <div class="col-md-3 " style={{float:'left'}}>
         <h3 className='fw-bold fs-5 mt-2'>LIENS UTILES</h3>
         <ul className='mt-5'>
-          <li><a href="#">QUI SOMMES NOUS</a></li>
-          <li><a href="#">NOS SOLUTIONS</a></li>
-          <li><a href="#">NOS SERVICES</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="/univsoft-website/about/">QUI SOMMES NOUS</a></li>
+          <li><a href="/univsoft-website/services/">NOS SERVICES</a></li>
+          <li><a href="/univsoft-website/solutions/">NOS SOLUTIONS</a></li>
+          <li><a href="/univsoft-website/contact/">CONTACT</a></li>
         </ul>
       </div>
     </div>

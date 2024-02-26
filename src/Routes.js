@@ -35,10 +35,10 @@ const ApplicationRoutes = () => {
     <div>
       
     <Navbar/>
-    <BrowserRouter basename="/univsoft-website/">
+    <BrowserRouter >
       <Routes>
         <Route
-          exact path="/"
+          exact path="/univsoft-website/"
           element={loading ? (
             <SpinnerContainer>
               <Spinner animation="border" role="status">
@@ -56,9 +56,9 @@ const ApplicationRoutes = () => {
               </CSSTransition>
             </TransitionGroup>
           )}
-        ></Route>
+        />
         <Route
-          path="/about/"
+          path="/univsoft-website/apropos/"
           element={loading ? (
             <SpinnerContainer>
               <Spinner animation="border" role="status">
@@ -76,10 +76,10 @@ const ApplicationRoutes = () => {
               </CSSTransition>
             </TransitionGroup>
           )}
-        ></Route>
+        />
 
 <Route
-          path="/services/"
+          path="/univsoft-website/services/"
           element={loading ? (
             <SpinnerContainer>
               <Spinner animation="border" role="status">
@@ -97,10 +97,10 @@ const ApplicationRoutes = () => {
               </CSSTransition>
             </TransitionGroup>
           )}
-        ></Route>
+        />
 
 <Route
-          path="/contact/"
+          path="/univsoft-website/contact/"
           element={loading ? (
             <SpinnerContainer>
               <Spinner animation="border" role="status">
@@ -118,10 +118,10 @@ const ApplicationRoutes = () => {
               </CSSTransition>
             </TransitionGroup>
           )}
-        ></Route>
+        />
 
 <Route
-          path="/solutions/"
+          path="/univsoft-website/solutions/"
           element={loading ? (
             <SpinnerContainer>
               <Spinner animation="border" role="status">
@@ -139,7 +139,7 @@ const ApplicationRoutes = () => {
               </CSSTransition>
             </TransitionGroup>
           )}
-        ></Route>
+        />
       </Routes>
     </BrowserRouter>
     <BackToTop/>

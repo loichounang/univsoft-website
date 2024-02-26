@@ -23,7 +23,7 @@ function Footer() {
       <div class="col-md-3 " style={{float:'left'}}>
         <h3 className='fw-bold fs-5 mt-2'>LIENS UTILES</h3>
         <ul className='mt-5'>
-          <li><a href="/univsoft-website/about/">QUI SOMMES NOUS</a></li>
+          <li><a href="/univsoft-website/apropos/">QUI SOMMES NOUS</a></li>
           <li><a href="/univsoft-website/services/">NOS SERVICES</a></li>
           <li><a href="/univsoft-website/solutions/">NOS SOLUTIONS</a></li>
           <li><a href="/univsoft-website/contact/">CONTACT</a></li>

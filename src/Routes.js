@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { Spinner } from 'react-bootstrap';
-import ApplicationHomePage from "./views/HomePage";
+import HomePage from "./views/HomePage";
 import About from "./views/About";
 import './style.css';
 import Navbar from '../src/components/navbar/Navbar';
@@ -28,14 +28,17 @@ const ApplicationRoutes = () => {
     loadData();
   }, []);
 
+  
+
+
   return (
     <div>
       
-      <Navbar/>
-    <BrowserRouter>
+    <Navbar/>
+    <BrowserRouter basename="/univsoft-website/">
       <Routes>
         <Route
-          path="/univsoft-website/"
+          exact path="/"
           element={loading ? (
             <SpinnerContainer>
               <Spinner animation="border" role="status">
@@ -49,13 +52,13 @@ const ApplicationRoutes = () => {
                 classNames="fade-enter"
                 timeout={300}
               >
-                <ApplicationHomePage />
+                <HomePage />
               </CSSTransition>
             </TransitionGroup>
           )}
-        />
+        ></Route>
         <Route
-          path="/univsoft-website/about/"
+          path="/about/"
           element={loading ? (
             <SpinnerContainer>
               <Spinner animation="border" role="status">
@@ -73,10 +76,10 @@ const ApplicationRoutes = () => {
               </CSSTransition>
             </TransitionGroup>
           )}
-        />
+        ></Route>
 
 <Route
-          path="/univsoft-website/services/"
+          path="/services/"
           element={loading ? (
             <SpinnerContainer>
               <Spinner animation="border" role="status">
@@ -86,7 +89,7 @@ const ApplicationRoutes = () => {
           ) : (
             <TransitionGroup>
               <CSSTransition
-                key="about"
+                key="services"
                 classNames="fade-enter"
                 timeout={300}
               >
@@ -94,10 +97,10 @@ const ApplicationRoutes = () => {
               </CSSTransition>
             </TransitionGroup>
           )}
-        />
+        ></Route>
 
 <Route
-          path="/univsoft-website/contact/"
+          path="/contact/"
           element={loading ? (
             <SpinnerContainer>
               <Spinner animation="border" role="status">
@@ -107,7 +110,7 @@ const ApplicationRoutes = () => {
           ) : (
             <TransitionGroup>
               <CSSTransition
-                key="about"
+                key="contact"
                 classNames="fade-enter"
                 timeout={300}
               >
@@ -115,10 +118,10 @@ const ApplicationRoutes = () => {
               </CSSTransition>
             </TransitionGroup>
           )}
-        />
+        ></Route>
 
 <Route
-          path="/univsoft-website/solutions/"
+          path="/solutions/"
           element={loading ? (
             <SpinnerContainer>
               <Spinner animation="border" role="status">
@@ -128,7 +131,7 @@ const ApplicationRoutes = () => {
           ) : (
             <TransitionGroup>
               <CSSTransition
-                key="about"
+                key="solutions"
                 classNames="fade-enter"
                 timeout={300}
               >
@@ -136,7 +139,7 @@ const ApplicationRoutes = () => {
               </CSSTransition>
             </TransitionGroup>
           )}
-        />
+        ></Route>
       </Routes>
     </BrowserRouter>
     <BackToTop/>

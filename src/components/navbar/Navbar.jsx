@@ -70,16 +70,16 @@ function Navbar() {
             <a class="nav-link active" aria-current="page" href="/univsoft-website/">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/univsoft-website/about/">A propos de nous</a>
+            <a class="nav-link" href="/about/">A propos de nous</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/univsoft-website/services/">Nos Services</a>
+            <a class="nav-link" href="/services/">Nos Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="/univsoft-website/solutions/" >Nos Solutions</a>
+            <a class="nav-link " href="/solutions/" >Nos Solutions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="/univsoft-website/contact/" >Contact</a>
+            <a class="nav-link " href="/contact/" >Contact</a>
           </li>
         </ul>
         

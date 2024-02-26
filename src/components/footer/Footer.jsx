@@ -8,7 +8,7 @@ function Footer() {
     <div class="row">
       <div class="col-md-6">
         <h3 className='mt-2 text-center' style={{fontSize:'50px', fontWeight:'bold'}} >Univ<span style={{color:'#ADADAC'}}>soft</span></h3>
-        <p className='mt-3 fs-5'>Nous sommes une équipe passionnée évoluant dans le domaine de l'informatique. Notre expertise couvre un large éventail de technologies de l'information, et nous sommes déterminés à fournir des solutions innovantes pour répondre aux besoins de nos clients.</p>
+        <p className='mt-3 fs-5' style={{textAlign:'justify'}}>Nous sommes une équipe passionnée évoluant dans le domaine de l'informatique. Notre expertise couvre un large éventail de technologies de l'information, et nous sommes déterminés à fournir des solutions innovantes pour répondre aux besoins de nos clients.</p>
       </div>
       <div class="col-md-3">
         <h3 className='fw-bold fs-5 mt-2'>CONTACTEZ-NOUS</h3>

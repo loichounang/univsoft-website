@@ -22,7 +22,7 @@ const ApplicationRoutes = () => {
       // Supprimez le spinner après le délai simulé (3000 ms dans cet exemple)
       setTimeout(() => {
         setLoading(false);
-      }, 3000);
+      }, 700);
     };
 
     loadData();

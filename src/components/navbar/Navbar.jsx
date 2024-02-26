@@ -67,7 +67,7 @@ function Navbar() {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto ">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+            <a class="nav-link active" aria-current="page" href="/univsoft-website/">Accueil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/univsoft-website/apropos/">A propos de nous</a>

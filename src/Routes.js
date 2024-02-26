@@ -34,7 +34,7 @@ const ApplicationRoutes = () => {
 
     <>
     <Navbar/>
-    <BrowserRouter basename="/univsoft-website">
+    <BrowserRouter >
       {loading ? (
         <div className="d-flex justify-content-center align-items-center vh-100">
         <Spinner variant="primary" animation="border" role="status" style={{ width: '5rem', height: '5rem' }}>
@@ -45,13 +45,13 @@ const ApplicationRoutes = () => {
       ) : (
         <Routes>
           {/** Route Primaire de l'application*/}
-          <Route path="/" element={<ApplicationHomePage />} />
+          <Route path="/univsoft-website/" element={<ApplicationHomePage />} />
   
           {/** Routes Particulières */}
-          <Route path="/services/" element={<Service/>} />
-          <Route path="/solutions/"  element={<Solutions/>}/>
-          <Route path="/apropos/" element={<About/>}/>
-          <Route path="/contact/" element={<Contact/>}/>
+          <Route path="/univsoft-website/services/" element={<Service/>} />
+          <Route path="/univsoft-website/solutions/"  element={<Solutions/>}/>
+          <Route path="/univsoft-website/apropos/" element={<About/>}/>
+          <Route path="/univsoft-website/contact/" element={<Contact/>}/>
         </Routes>
       )}
     </BrowserRouter>

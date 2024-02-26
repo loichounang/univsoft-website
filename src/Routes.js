@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { Spinner } from 'react-bootstrap';
-import HomePage from "./views/HomePage";
+import ApplicationHomePage from "./views/HomePage";
 import About from "./views/About";
 import './style.css';
 import Navbar from '../src/components/navbar/Navbar';
@@ -22,7 +21,7 @@ const ApplicationRoutes = () => {
       // Supprimez le spinner après le délai simulé (3000 ms dans cet exemple)
       setTimeout(() => {
         setLoading(false);
-      }, 700);
+      }, 1000);
     };
 
     loadData();
@@ -32,132 +31,37 @@ const ApplicationRoutes = () => {
 
 
   return (
-    <div>
-      
+
+    <>
     <Navbar/>
-    <BrowserRouter >
-      <Routes>
-        <Route
-          exact path="/univsoft-website/"
-          element={loading ? (
-            <SpinnerContainer>
-              <Spinner animation="border" role="status">
-                <span className="sr-only">Univsoft</span>
-              </Spinner>
-            </SpinnerContainer>
-          ) : (
-            <TransitionGroup>
-              <CSSTransition
-                key="home"
-                classNames="fade-enter"
-                timeout={300}
-              >
-                <HomePage />
-              </CSSTransition>
-            </TransitionGroup>
-          )}
-        />
-        <Route
-          path="/univsoft-website/apropos/"
-          element={loading ? (
-            <SpinnerContainer>
-              <Spinner animation="border" role="status">
-                <span className="sr-only">Loading...</span>
-              </Spinner>
-            </SpinnerContainer>
-          ) : (
-            <TransitionGroup>
-              <CSSTransition
-                key="about"
-                classNames="fade-enter"
-                timeout={300}
-              >
-                <About />
-              </CSSTransition>
-            </TransitionGroup>
-          )}
-        />
-
-<Route
-          path="/univsoft-website/services/"
-          element={loading ? (
-            <SpinnerContainer>
-              <Spinner animation="border" role="status">
-                <span className="sr-only">Loading...</span>
-              </Spinner>
-            </SpinnerContainer>
-          ) : (
-            <TransitionGroup>
-              <CSSTransition
-                key="services"
-                classNames="fade-enter"
-                timeout={300}
-              >
-                <Service />
-              </CSSTransition>
-            </TransitionGroup>
-          )}
-        />
-
-<Route
-          path="/univsoft-website/contact/"
-          element={loading ? (
-            <SpinnerContainer>
-              <Spinner animation="border" role="status">
-                <span className="sr-only">Loading...</span>
-              </Spinner>
-            </SpinnerContainer>
-          ) : (
-            <TransitionGroup>
-              <CSSTransition
-                key="contact"
-                classNames="fade-enter"
-                timeout={300}
-              >
-                <Contact />
-              </CSSTransition>
-            </TransitionGroup>
-          )}
-        />
-
-<Route
-          path="/univsoft-website/solutions/"
-          element={loading ? (
-            <SpinnerContainer>
-              <Spinner animation="border" role="status">
-                <span className="sr-only">Loading...</span>
-              </Spinner>
-            </SpinnerContainer>
-          ) : (
-            <TransitionGroup>
-              <CSSTransition
-                key="solutions"
-                classNames="fade-enter"
-                timeout={300}
-              >
-                <Solutions/>
-              </CSSTransition>
-            </TransitionGroup>
-          )}
-        />
-      </Routes>
+    <BrowserRouter>
+      {loading ? (
+        <div className="d-flex justify-content-center align-items-center vh-100">
+        <Spinner variant="primary" animation="border" role="status" style={{ width: '5rem', height: '5rem' }}>
+          <span className="sr-only">univsoft...</span>
+        </Spinner>
+      </div>
+      
+      ) : (
+        <Routes>
+          {/** Route Primaire de l'application*/}
+          <Route path="/univsoft-website/" element={<ApplicationHomePage />} />
+  
+          {/** Routes Particulières */}
+          <Route path="/univsoft-website/services/" element={<Service/>} />
+          <Route path="/univsoft-website/solutions/"  element={<Solutions/>}/>
+          <Route path="/univsoft-website/apropos/" element={<About/>}/>
+          <Route path="/univsoft-website/contact/" element={<Contact/>}/>
+        </Routes>
+      )}
     </BrowserRouter>
     <BackToTop/>
     <Footer/>
-    </div>
+  </>
   );
 };
 
-const SpinnerContainer = () => (
-    <div className="d-flex justify-content-center align-items-center vh-100">
-      <Spinner
-        animation="border"
-        role="status"
-        style={{ width: '7rem', height: '7em', color: '#3464AE' }}
-      />
-    </div>
-  );
-  
+
   
 
 export default ApplicationRoutes;

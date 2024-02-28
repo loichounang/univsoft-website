@@ -3,13 +3,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../body/partners.css';
-import youtube from '../../assets/images/youtube.png';
-import uber from '../../assets/images/uber.jpeg';
-import adiddas from '../../assets/images/adidas.png';
-import facebook from '../../assets/images/facebook.png';
-import nike from '../../assets/images/nike.png';
-import google from '../../assets/images/google.png';
-import openia from '../../assets/images/openia.png';
+import gayap from '../../assets/images/gayap.PNG';
+import biotech from '../../assets/images/biotech.jpeg';
+import karmites from '../../assets/images/karmites.jpeg';
+import osnou from '../../assets/images/osnou.jpg';
+import skysoft from '../../assets/images/skysoft.png';
 
 function Partners() {
   const settings = {
@@ -44,25 +42,19 @@ function Partners() {
       <hr className='text-dark fw-bold' style={{width:'200px',margin:'15px auto', height:'5px !important'}}/>
       <Slider {...settings} className='customer-logo-slider'>
         <div className='slide'>
-          <img src={youtube} alt='YouTube' />
+          <img src={skysoft} alt='YouTube' />
         </div>
         <div className='slide'>
-          <img src={adiddas} alt='Adidas' />
+          <img src={osnou} alt='Adidas' />
         </div>
         <div className='slide'>
-          <img src={facebook} alt='Facebook' />
+          <img src={karmites} alt='Facebook' />
         </div>
         <div className='slide'>
-          <img src={nike} alt='Nike' />
+          <img src={gayap} alt='Nike' />
         </div>
         <div className='slide'>
-          <img src={uber} alt='Uber' />
-        </div>
-        <div className='slide'>
-          <img src={google} alt='Uber' />
-        </div>
-        <div className='slide'>
-          <img src={openia} alt='YouTube' />
+          <img src={biotech} alt='Uber' />
         </div>
       </Slider>
       <div className='mb-5'></div>
